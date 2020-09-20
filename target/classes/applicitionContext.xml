@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入约束 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 配置实用哪个实现类对Service接口进行实例化 -->
+    <!-- 配置实现类HelloServiceImpl，定义名称helloService -->
+    <bean
+            id="helloService"
+            class="com.springioc.test.ClassPathXmlApplicationContext">
+    </bean>
+</beans>
